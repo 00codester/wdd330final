@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemWord</title>
+    <script src="js/api.js" type="module"></script>
 </head>
 <body>
     <header>
         
     </header>
-    <h1>Memorize this word:</h1>
+    <div id="flashcard">
+        <h1>Word: <span id="mainWord"></span></h1>
+        <p>Definition: <span id="wordDef"></span></p>
+        <p>Origin: <span id="wordOrigin"></span></p>
+        <p>Synonyms: <span id="wordSyn"></span></p>
+        <button>Learned It!</button>
+    </div>
+    
 
     <footer>
         <p>Cody's Website</p>
