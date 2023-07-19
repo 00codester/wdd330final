@@ -32,9 +32,6 @@ async function apiFetch(){
 
 function spawnPage(wordData){
     const pickedword = ace.toUpperCase();
-    //wordData[0].meta.id.toUpperCase()
-
-    
     const defdata = wordData[0].shortdef;
 
     if(wordData[0].hasOwnProperty('et')){
@@ -43,11 +40,7 @@ function spawnPage(wordData){
     } else {
         origin.textContent = "Unknown";
     }
-    // if(wordData[0].includes(wordData[0].et[0][1])){
-    //     const wordo = wordData[0].et[0][1];
-    //     origin.textContent = wordo;
-    // }
-    word.textContent = pickedword;
+    word.innerHTML = "<h2>" + pickedword + "</h2>";
     def.textContent = defdata;
     search.textContent = pickedword;
 }
@@ -55,8 +48,6 @@ function spawnPage(wordData){
 async function wordGetter(){
     let myword = await fetch(wordlist);
     let jsonword = await myword.json();
-    // console.log(jsonword);
-    // console.log(jsonword[0]);
     return jsonword[0];
     
 }
