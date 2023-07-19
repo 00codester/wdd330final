@@ -40,7 +40,7 @@ function spawnPage(wordData){
     } else {
         origin.textContent = "Unknown";
     }
-    word.innerHTML = "<h2>" + pickedword + "</h2>";
+    word.textContent = pickedword;
     def.textContent = defdata;
     search.textContent = pickedword;
 }
