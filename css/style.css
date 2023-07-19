@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/* body{
+    background-image: url("/images/paper.jpg");
+    background-size: 40rem;
+    
+} */
+header{
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: aquamarine;
+}
+
+main{
+    width: 100%;
+    padding: 0;
+}
+#container{
+    background-image: url("/images/paper.jpg");
+    background-size: 60rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#logo{
+    height: 50px;
+    margin: 1rem;
+    display: inline;
+    border-radius: 50%;
+}
+
+#appTitle {
+    display: inline;
+    margin: 0 auto;
+}
+/* main{
+    display: grid;
+    grid-template-columns: 1fr;
+
+} */
+#textlabel{
+    grid-column: 1/2;
+}
+#theWord{
+    grid-column: 2/3;
+}
+#searchBut{
+    grid-column: 3/4;
+}
+
+.formDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#wordsearch{
+    text-align: center;
+    grid-row: 1/2;
+}
+
+#flashcard{
+    width: 100%;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+    
+    /* background-color:aqua; */
+    grid-row: 3/4;
+    
+    /* text-align: center; */
+}
+
+#cardContent{
+    text-align: left;
+    margin: 1rem;
+    border: solid 1px black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+#learnbtn{
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+#btndiv {
+    text-align: center;
+    margin: 1rem;
+}
+
+button{
+    border-radius: 1rem;
+    background-color: aquamarine;
+}
+
+#wordCountCard{
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 1rem;
+    max-width: 10rem;
+    grid-row: 2/3;
+    background-color: white;
+}
+
+#wordCount{
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 3em;
+    
+}
+footer p{
+    margin: 0;
+}
+footer{
+    background-color: white;
+    /* position:absolute; */
+    /* left:0px; */
+    bottom:0;
+    width: 100%;
+    padding: 1rem;
+    background-color: aquamarine;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 45rem) {
+/* body{
+    background-image: url("/images/paper.jpg");
+    background-size: 120rem;
+    
+} */
+header{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+#logo{
+    height: 100px;
+}
+
+#container{
+    background-image: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main{
+    background-image: url("/images/paper.jpg");
+    background-size: 120rem;
+    
+    /* max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem; */
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.3em;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+/* main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+#flashcard{
+    grid-row: 2/3;
+    grid-column: 1/5;
+    /* background-color: white;
+    padding: 2rem; */
+    max-width: 900px;
+}
+
+
+#wordCountCard{
+    grid-row: 1/2;
+    grid-column: 4/5;
+    background-color: white;
+}
+
+#wordsearch{
+    
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+button{
+    background-color: aquamarine;
+}
+
+
+
+}
