@@ -18,7 +18,7 @@ main{
     padding: 0;
 }
 #container{
-    background-image: url("images/paper.jpg");
+    background-image: url("../images/paper.jpg");
     background-size: 60rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -157,7 +157,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 main{
-    background-image: url("images/paper.jpg");
+    background-image: url("../images/paper.jpg");
     background-size: 120rem;
     
     /* max-width: 900px;
