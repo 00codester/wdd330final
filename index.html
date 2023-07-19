@@ -4,23 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemWord</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/api.js" type="module"></script>
+    <script src="js/tracker.js" type="module"></script>
+    
 </head>
 <body>
     <header>
+        <img id="logo" src="/images/memword.png">
+        <div id="appTitle"><h1>MemWord App</h1></div>
         
     </header>
-    <div id="flashcard">
-        <h1>Word: <span id="mainWord"></span></h1>
-        <p>Definition: <span id="wordDef"></span></p>
-        <p>Origin: <span id="wordOrigin"></span></p>
-        <p>Synonyms: <span id="wordSyn"></span></p>
-        <button>Learned It!</button>
-    </div>
-    
+    <main>
+        <div id="container">
 
+            <!-- <form method="POST" id="chosenWord">
+                <div class="formDiv">
+                    <label id="textlabel" for="theWord">Word:</label>
+                    <input type="text" name="theWord" id="theWord" value=""></input>
+                    <button type="submit" id="searchBut">Search!</button>
+                </div>
+                
+            </form> -->
+            <div id="wordsearch">
+                <h1>Word: <span id="wordSearchWord"></span></h1>
+            </div>
+        
+        
+            <div id="flashcard">
+                <div id="cardContent">
+                    <h2><span id="mainWord"></span></h2>
+                    <p>Definition: <span id="wordDef"></span></p>
+                    <p>Origin: <span id="wordOrigin"></span></p>
+                    <!-- <p>Synonyms: <span id="wordSyn"></span></p> -->
+                    <div id="btndiv">
+                        <button id="learnbtn">Learned It!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="wordCountCard">
+                <p>Words learned so far:</p>
+                <p id="wordCount"></p>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p>Cody's Website</p>
+        <p>&copy; 2023 MemWord App | Cody Karl | WDD330 Final Project</p>
+        <!-- <p><a href="https://www.freepik.com/free-photo/paper-textures-background_3502657.htm#query=lined%20paper%20background&position=2&from_view=keyword&track=ais">Image by lifeforstock</a> on Freepik</p> -->
     </footer>
 </body>
 </html>
